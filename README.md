@@ -17,3 +17,6 @@ either run the main function from 'MixCalulator' class, or create a runnable jar
 
  ## data
  the data this calculator is based on, is coming from schedule-1.fandom.com. during testing i already found some discrepancies. there is no guarantee that all the results are correct.
+
+## license
+this project is licensed under the [MIT License](LICENSE.txt).
