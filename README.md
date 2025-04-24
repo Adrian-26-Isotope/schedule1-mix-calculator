@@ -20,3 +20,80 @@ either run the main function from 'MixCalulator' class, or create a runnable jar
 
 ## license
 this project is licensed under the [MIT License](LICENSE.txt).
+
+## examples
+<b> og kush example </b><br>
+input arguments: 2 38 CALMING<br>
+output:
+<pre>
+HIGHEST MULTIPLIER
+##################################################################################
+multiplier: 2.4
+price: 91
+cost: 9
+profit: 82
+effects: [CYCLOPEAN, FOGGY, GLOWING]
+ingredients:[CUKE, MEGA_BEAN]
+##################################################################################
+
+HIGHEST PROFIT
+##################################################################################
+multiplier: 2.4
+price: 91
+cost: 9
+profit: 82
+effects: [CYCLOPEAN, FOGGY, GLOWING]
+ingredients:[CUKE, MEGA_BEAN]
+##################################################################################
+</pre>
+
+<b> meth example </b><br>
+input arguments: 3 70<br>
+output:
+<pre>
+HIGHEST MULTIPLIER
+##################################################################################
+multiplier: 2.48
+price: 173
+cost: 22
+profit: 151
+effects: [TROPIC_THUNDER, ELECTRIFYING, LONG_FACED]
+ingredients:[VIAGOR, ADDY, HORSE_SEMEN]
+##################################################################################
+
+HIGHEST PROFIT
+##################################################################################
+multiplier: 2.38
+price: 166
+cost: 13
+profit: 153
+effects: [TROPIC_THUNDER, CYCLOPEAN, FOGGY]
+ingredients:[CUKE, VIAGOR, MEGA_BEAN]
+##################################################################################
+</pre>
+
+<b> cocaine example </b><br>
+input arguments: 4 150<br>
+output:
+<pre>
+HIGHEST MULTIPLIER
+##################################################################################
+multiplier: 2.94
+price: 441
+cost: 27
+profit: 414
+effects: [ELECTRIFYING, LONG_FACED, CYCLOPEAN, FOGGY]
+ingredients:[CUKE, ADDY, HORSE_SEMEN, MEGA_BEAN]
+##################################################################################
+
+HIGHEST PROFIT
+##################################################################################
+multiplier: 2.94
+price: 441
+cost: 20
+profit: 421
+effects: [ELECTRIFYING, LONG_FACED, CYCLOPEAN, FOGGY]
+ingredients:[BANANA, CUKE, HORSE_SEMEN, MEGA_BEAN]
+##################################################################################
+</pre>
+
