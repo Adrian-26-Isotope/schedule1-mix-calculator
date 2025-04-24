@@ -2,7 +2,7 @@
 this is a mix calculator for the fantastic game <b>'Schedule 1'</b>. it calculates the ingredients for the highest profit product.
 
 ## game version
-TODO
+v0.3.4f8
 
 ## java version
 21+
