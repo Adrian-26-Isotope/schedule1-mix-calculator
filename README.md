@@ -8,7 +8,18 @@ TODO
 21+
 
 ## execution
-either run the main function from 'MixCalulator' class, or create a runnable jar and execute the jar. dont forget to add the arguments when exeucting. to execute the jar file use the command "java -jar {filename}.jar {arg1} {arg2} {arg3}".
+<ul>
+ <li>
+  either run the main function from 'MixCalulator' class
+ </li>
+ <li>
+  or create a runnable jar and execute it,
+ </li> 
+ <li>
+  or download one of the release jar files.
+ </li>
+</ul>
+ dont forget to add the arguments when exeucting. to execute the jar file use the command "java -jar {filename}.jar {arg1} {arg2} {arg3}".
 
 ## arguments
  <b>1st arg: (mandatory) number of iterations</b> (number of desired mix iterations = number of ingredients)<br>
