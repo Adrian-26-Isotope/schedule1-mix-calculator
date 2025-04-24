@@ -1,4 +1,4 @@
-# schedule1_mix_calculator
+# schedule1-mix-calculator
 this is a mix calculator for the game <b>'Schedule 1'</b>. it calculates the ingredients for the highest profit product.
 
 ## game version
