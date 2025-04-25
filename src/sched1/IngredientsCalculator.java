@@ -11,14 +11,19 @@ import java.util.function.Predicate;
 
 public class IngredientsCalculator {
     // TODO multithreading
-    // TODO timeout handling for impossible combinations
 
 
     /**
      * @param args effects the end product shall have.
      */
     public static void main(final String[] args) {
-        if (args.length == 0) {
+        int maxIterations = 5;
+        if (args.length < 2) {
+            System.err.println("too few arguments!");
+            return;
+        }
+        if (args.length > (maxIterations + 1)) {
+            System.err.println("too many arguments!");
             return;
         }
 
@@ -41,7 +46,7 @@ public class IngredientsCalculator {
         allProductCombinations.add(ogProduct);
         Predicate<Product> filter = product -> product.getEffects().containsAll(desiredEffects);
         boolean ongoing = true;
-        while (ongoing) {
+        while (ongoing && (maxIterations > 0)) {
             List<Product> outputProducts = new ArrayList<>();
             for (Product product : allProductCombinations) {
                 Collection<Product> newProducts = addIngredient(product);
@@ -51,10 +56,17 @@ public class IngredientsCalculator {
                 outputProducts.addAll(newProducts);
             }
             allProductCombinations = outputProducts;
+            maxIterations--;
         }
 
         List<Product> result = allProductCombinations.stream().filter(filter).toList();
+        if (result.isEmpty() || (maxIterations == 0)) {
+            System.err.println("no combination possible");
+            return;
+        }
 
+        System.out.println("BEST COMBINATIONS FOR:");
+        System.out.println(desiredEffects);
         printResult(result);
     }
 
@@ -84,11 +96,11 @@ public class IngredientsCalculator {
     private static void printResult(final List<Product> allProductCombinations) {
         Optional<Product> maxMultiplier =
                 allProductCombinations.stream().max(Comparator.comparing(Product::getMultiplier));
-        System.out.println("\nHIGHEST MULTIPLIER");
+        System.out.println("\n\tHIGHEST MULTIPLIER");
         System.out.println(maxMultiplier.get());
 
         Optional<Product> minCost = allProductCombinations.stream().min(Comparator.comparing(Product::getCost));
-        System.out.println("\nLOWEST COST");
+        System.out.println("\n\tLOWEST COST");
         System.out.println(minCost.get());
     }
 
