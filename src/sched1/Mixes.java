@@ -4,21 +4,21 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Data {
+public class Mixes {
 
     private final List<Mix> mixes = new ArrayList<>();
 
-    private static Data instance = null;
+    private static Mixes instance = null;
 
 
     public static List<Mix> getMixes() {
         if (instance == null) {
-            instance = new Data();
+            instance = new Mixes();
         }
         return Collections.unmodifiableList(instance.mixes);
     }
 
-    private Data() {
+    private Mixes() {
         this.mixes.add(new Mix(Effect.ANTI_GRAVITY, Ingredient.BANANA, Effect.SMELLY));
         this.mixes.add(new Mix(Effect.ANTI_GRAVITY, Ingredient.PARACETAMOL, Effect.MUNCHIES));
         this.mixes.add(new Mix(Effect.ANTI_GRAVITY, Ingredient.MOUTH_WASH, Effect.CALMING));

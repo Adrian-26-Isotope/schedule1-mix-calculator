@@ -6,7 +6,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 
-public class MixCalculator {
+public class HighestProfitCalculator {
 
     /**
      * 1st arg: number of iterations<br>
