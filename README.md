@@ -10,7 +10,7 @@ v0.3.4f8
 ## execution
 <ul>
  <li>
-  either run the main function from 'MixCalulator' class
+  either run the main function from 'HighestProfitCalculator' class
  </li>
  <li>
   or create a runnable jar and execute it,
